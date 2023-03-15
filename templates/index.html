@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Price</title>
+</head>
+<body style="background-color:#D5F5E3">
+    <h1 style="color: rgb(240, 13, 13); text-align: center;">
+        Flight Price 
+    </h1>
+    <h3 style="color:#045b2a",text-align:middle><strong>
+        Please Fill the Details for check the Flight Price
+    </strong></h3>
+    <form action="/predict" method="post">
+        <div>
+        <label  for="airline" >Select Airline: </label>
+        <select  name="Airline" id="airline">
+            <option value="Jet_Airways">Jet Airways</option>
+            <option value="IndiGo">IndiGo</option>
+            <option value="Air_India">Air India</option>
+            <option value="Multiple_carriers">Multiple carriers</option>
+            <option value="SpiceJet">SpiceJet</option>
+            <option value="Vistara">Vistara</option>
+            <option value="Air_Asia">Air Asia</option>
+            <option value="GoAir">GoAir</option>
+            <option value="Other_Airline">Other Airline</option>
+          </select>
+        </div>
+        <br>
+        <div>
+
+            <div>
+                <label for="source" >Select Source: </label>
+                <select name="Source" id="source">
+                    <option value="Chennai">Chennai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Banglore">Banglore</option>
+                    <option value="Mumbai">Mumbai</option>
+                  </select>
+                </div>
+                <br>
+                <div>
+                    <div>
+                        <label for="destination" >Select Destination: </label>
+                        <select name="Destination" id="destination">
+                            <option value="Chochin">Chochin</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Banglore">Banglore</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                          </select>
+                        </div>
+                        <br>
+                        <div>
+                            <div>
+                                <label for="total_stops" >Total Stops </label>
+                                <select name="Total_Stops" id="total_stops">
+                                    <option value="Non_Stop">Non_Stop</option>
+                                    <option value="1_Stop">1 Stop</option>
+                                    <option value="2_Stops">2 Stops</option>
+                                    <option value="3_Stops">3 Stops</option>
+                                    <option value="4_Stops">4 Stops</option>
+                                  </select>
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="departure_time" >Departure  Time</label>
+                                    <input type="datetime-local" name="Departure_Time" id="departure_time">
+                                </div>
+                                <br>
+
+                        <div>
+                            <label for="arrival_time" >Arrival Time</label>
+                            <input type="datetime-local" name="Arrival_Time" id="arrival_time">
+                        </div>
+                        <br>
+
+
+            <label style="color:rgb(63, 40, 5)"      for="predict">Press Submit to Predict the Price: </label>
+            <input type="submit" name="Predict" id="predict">
+        </div>
+
+    </form>
+</body>
+</html>
